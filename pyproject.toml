@@ -6,6 +6,8 @@ requires-python = ">=3.11"
 dependencies = [
   "headroom-ai",
   "tiktoken",
+  "openai",
+  "python-dotenv",
 ]
 
 [tool.uv]

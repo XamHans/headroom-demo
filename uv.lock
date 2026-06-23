@@ -534,12 +534,16 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "headroom-ai" },
+    { name = "openai" },
+    { name = "python-dotenv" },
     { name = "tiktoken" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "headroom-ai" },
+    { name = "openai" },
+    { name = "python-dotenv" },
     { name = "tiktoken" },
 ]
 

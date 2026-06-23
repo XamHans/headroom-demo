@@ -1,5 +1,6 @@
 .env
 video_headroom_de_script.md
+headroom_demo_*.json
 !.env.example
 .venv/
 __pycache__/

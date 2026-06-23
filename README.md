@@ -1,0 +1,69 @@
+# Headroom Video Demo
+
+This repository contains the demo assets for a YouTube video about Headroom — a local-first context compression layer for AI agents.
+
+It focuses on a practical question:
+
+How do you make long tool outputs, logs, JSON, and conversation context smaller without losing the signal that matters?
+
+The notebook now includes a live OpenAI call so the API key from `.env` is used concretely, not just stored.
+
+## What is inside
+
+- `headroom_erklaerung_de.ipynb` — a German notebook that shows a clear before/after demo plus a live OpenAI call with latency and token metrics
+- `.env.example` — safe template for local secrets
+- `pyproject.toml` — uv project setup for the demo
+
+## Why this demo exists
+
+The goal is to make Headroom easy to understand in a video format:
+
+- what Headroom does
+- where it sits in the pipeline
+- how the three usage modes differ
+- what you can control when trimming context
+- how many tokens you save in a before/after comparison
+
+## Setup
+
+1. Copy the env template:
+
+```bash
+cp .env.example .env
+```
+
+2. Add your local OpenAI key to `.env`:
+
+```env
+OPENAI_API_KEY=your-key-here
+```
+
+This key is used in the notebook's live OpenAI cell, which also prints latency and token usage.
+
+3. Run the demo with uv:
+
+```bash
+uv run --env-file .env python -m jupyter notebook headroom_erklaerung_de.ipynb
+```
+
+If you run the notebook in Jupyter, make sure the kernel uses the same environment.
+
+## Secrets policy
+
+- `.env` stays local and must never be committed
+- `.env.example` is safe to commit
+- `.venv/` is ignored
+
+## Community context
+
+This demo is also meant to support my Skool community, **The AI Engineer**, where I share practical AI engineering workflows, demos, and systems that turns you into a high paying AI engineer role.
+
+## Recommended use in the video
+
+Use the notebook to show:
+
+1. raw context before Headroom
+2. compressed context after Headroom
+3. token savings and the key parameters that control trimming
+
+That keeps the story concrete instead of theoretical.
