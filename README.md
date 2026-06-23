@@ -1,6 +1,10 @@
 # Headroom Video Demo
 
+![The AI Engineer community](https://assets.skool.com/f/1d996b4fb16c47b188ef65bda1e70d1c/227f992762bf4bd99c1fd91dc62d0737ed72c12eef0742669afdccd59f4c857a.jpg)
+
 This repository contains the demo assets for a YouTube video about Headroom — a local-first context compression layer for AI agents.
+
+If you want the code, walkthroughs, and practical AI engineering systems behind these demos, join my Skool community: [The AI Engineer](https://www.skool.com/ai-builders-6997).
 
 It focuses on a practical question:
 
