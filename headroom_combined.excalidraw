@@ -1,0 +1,43 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {"type":"text","id":"h1","x":40,"y":20,"width":760,"height":34,"text":"Headroom in der Pipeline","fontSize":24,"fontFamily":1,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","roughness":1,"opacity":100,"originalText":"Headroom in der Pipeline","autoResize":true},
+    {"type":"text","id":"h2","x":40,"y":56,"width":860,"height":22,"text":"vor dem Modell • reduziert Kontext • zeigt Savings","fontSize":18,"fontFamily":1,"strokeColor":"#6b7280","backgroundColor":"transparent","fillStyle":"solid","roughness":1,"opacity":100,"originalText":"vor dem Modell • reduziert Kontext • zeigt Savings","autoResize":true},
+
+    {"type":"rectangle","id":"p_in","x":40,"y":110,"width":160,"height":86,"roundness":{"type":3},"strokeColor":"#1d4ed8","backgroundColor":"#dbeafe","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"pt_in","type":"text"}]},
+    {"type":"text","id":"pt_in","x":61,"y":136,"width":118,"height":34,"text":"INPUTS","fontSize":24,"fontFamily":1,"strokeColor":"#111827","textAlign":"center","verticalAlign":"middle","containerId":"p_in","originalText":"INPUTS","autoResize":true},
+    {"type":"arrow","id":"p_a1","x":200,"y":153,"width":115,"height":0,"points":[[0,0],[115,0]],"endArrowhead":"arrow","strokeColor":"#111827","strokeWidth":2,"roughness":1,"opacity":100},
+    {"type":"rectangle","id":"p_hr","x":315,"y":96,"width":220,"height":116,"roundness":{"type":3},"strokeColor":"#7c3aed","backgroundColor":"#e9d5ff","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"pt_hr","type":"text"}]},
+    {"type":"text","id":"pt_hr","x":339,"y":125,"width":172,"height":58,"text":"HEADROOM\ncompress","fontSize":24,"fontFamily":1,"strokeColor":"#111827","textAlign":"center","verticalAlign":"middle","containerId":"p_hr","originalText":"HEADROOM\ncompress","autoResize":true},
+    {"type":"arrow","id":"p_a2","x":535,"y":153,"width":115,"height":0,"points":[[0,0],[115,0]],"endArrowhead":"arrow","strokeColor":"#111827","strokeWidth":2,"roughness":1,"opacity":100},
+    {"type":"rectangle","id":"p_llm","x":650,"y":110,"width":160,"height":86,"roundness":{"type":3},"strokeColor":"#7f1d1d","backgroundColor":"#fecaca","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"pt_llm","type":"text"}]},
+    {"type":"text","id":"pt_llm","x":680,"y":136,"width":100,"height":34,"text":"LLM","fontSize":24,"fontFamily":1,"strokeColor":"#111827","textAlign":"center","verticalAlign":"middle","containerId":"p_llm","originalText":"LLM","autoResize":true},
+    {"type":"arrow","id":"p_a3","x":730,"y":196,"width":0,"height":68,"points":[[0,0],[0,68]],"endArrowhead":"arrow","strokeColor":"#111827","strokeWidth":2,"roughness":1,"opacity":100},
+    {"type":"rectangle","id":"p_met","x":620,"y":300,"width":230,"height":94,"roundness":{"type":3},"strokeColor":"#047857","backgroundColor":"#a7f3d0","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"pt_met","type":"text"}]},
+    {"type":"text","id":"pt_met","x":643,"y":324,"width":184,"height":46,"text":"METRICS\nsaved / ratio / latency","fontSize":22,"fontFamily":1,"strokeColor":"#111827","textAlign":"center","verticalAlign":"middle","containerId":"p_met","originalText":"METRICS\nsaved / ratio / latency","autoResize":true},
+    {"type":"arrow","id":"p_a4","x":730,"y":196,"width":-80,"height":104,"points":[[0,0],[-80,104]],"endArrowhead":"arrow","strokeColor":"#111827","strokeWidth":2,"roughness":1,"opacity":100},
+    {"type":"text","id":"p_note1","x":40,"y":420,"width":820,"height":30,"text":"logs / json / tables rein -> headroom macht es kleiner -> modell sieht nur das wesentliche","fontSize":20,"fontFamily":1,"strokeColor":"#374151","backgroundColor":"transparent","fillStyle":"solid","roughness":1,"opacity":100,"originalText":"logs / json / tables rein -> headroom macht es kleiner -> modell sieht nur das wesentliche","autoResize":true},
+
+    {"type":"text","id":"u1","x":40,"y":500,"width":640,"height":34,"text":"Wie man Headroom benutzt","fontSize":24,"fontFamily":1,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","roughness":1,"opacity":100,"originalText":"Wie man Headroom benutzt","autoResize":true},
+    {"type":"text","id":"u2","x":40,"y":536,"width":760,"height":22,"text":"3 Wege • 3 Levels • wenig Text","fontSize":18,"fontFamily":1,"strokeColor":"#6b7280","backgroundColor":"transparent","fillStyle":"solid","roughness":1,"opacity":100,"originalText":"3 Wege • 3 Levels • wenig Text","autoResize":true},
+
+    {"type":"rectangle","id":"u_easy","x":40,"y":580,"width":300,"height":164,"roundness":{"type":3},"strokeColor":"#15803d","backgroundColor":"#dcfce7","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"ut_easy","type":"text"}]},
+    {"type":"text","id":"ut_easy","x":63,"y":602,"width":254,"height":120,"text":"EASY\nProxy\n\nstart • no code changes","fontSize":24,"fontFamily":1,"strokeColor":"#111827","textAlign":"center","verticalAlign":"middle","containerId":"u_easy","originalText":"EASY\nProxy\n\nstart • no code changes","autoResize":true},
+
+    {"type":"rectangle","id":"u_med","x":370,"y":580,"width":300,"height":164,"roundness":{"type":3},"strokeColor":"#b45309","backgroundColor":"#fde68a","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"ut_med","type":"text"}]},
+    {"type":"text","id":"ut_med","x":393,"y":602,"width":254,"height":120,"text":"MEDIUM\nPython SDK\n\nwrap client • more control","fontSize":24,"fontFamily":1,"strokeColor":"#111827","textAlign":"center","verticalAlign":"middle","containerId":"u_med","originalText":"MEDIUM\nPython SDK\n\nwrap client • more control","autoResize":true},
+
+    {"type":"rectangle","id":"u_hard","x":700,"y":580,"width":300,"height":164,"roundness":{"type":3},"strokeColor":"#7c2d12","backgroundColor":"#fed7aa","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"ut_hard","type":"text"}]},
+    {"type":"text","id":"ut_hard","x":723,"y":602,"width":254,"height":120,"text":"HARD\nAnthropic / Prod\n\nstack integration • robust","fontSize":24,"fontFamily":1,"strokeColor":"#111827","textAlign":"center","verticalAlign":"middle","containerId":"u_hard","originalText":"HARD\nAnthropic / Prod\n\nstack integration • robust","autoResize":true},
+
+    {"type":"arrow","id":"u_a1","x":190,"y":744,"width":0,"height":74,"points":[[0,0],[0,74]],"endArrowhead":"arrow","strokeColor":"#15803d","strokeWidth":2,"roughness":1,"opacity":100},
+    {"type":"arrow","id":"u_a2","x":520,"y":744,"width":0,"height":74,"points":[[0,0],[0,74]],"endArrowhead":"arrow","strokeColor":"#b45309","strokeWidth":2,"roughness":1,"opacity":100},
+    {"type":"arrow","id":"u_a3","x":850,"y":744,"width":0,"height":74,"points":[[0,0],[0,74]],"endArrowhead":"arrow","strokeColor":"#7c2d12","strokeWidth":2,"roughness":1,"opacity":100},
+
+    {"type":"rectangle","id":"u_note","x":40,"y":850,"width":960,"height":112,"roundness":{"type":3},"strokeColor":"#374151","backgroundColor":"#f9fafb","fillStyle":"solid","strokeWidth":2,"roughness":1,"opacity":100,"boundElements":[{"id":"ut_note","type":"text"}]},
+    {"type":"text","id":"ut_note","x":62,"y":872,"width":916,"height":68,"text":"video line: raw payload -> headroom payload -> savings\nproxy is fastest • sdk gives control • hard is production stack","fontSize":22,"fontFamily":1,"strokeColor":"#111827","textAlign":"left","verticalAlign":"middle","containerId":"u_note","originalText":"video line: raw payload -> headroom payload -> savings\nproxy is fastest • sdk gives control • hard is production stack","autoResize":true}
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff"}
+}
