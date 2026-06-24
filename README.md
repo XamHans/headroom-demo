@@ -1,5 +1,8 @@
 # Headroom Video Demo
 
+> **Want the code, walkthroughs, and practical AI engineering systems behind these demos?**
+> Join **[The AI Engineer](https://www.skool.com/ai-builders-6997)** — my Skool community for developers building real AI systems.
+
 ![The AI Engineer community](https://assets.skool.com/f/1d996b4fb16c47b188ef65bda1e70d1c/227f992762bf4bd99c1fd91dc62d0737ed72c12eef0742669afdccd59f4c857a.jpg)
 
 This repository contains the demo assets for a YouTube video about Headroom — a local-first context compression layer for AI agents.
@@ -14,7 +17,8 @@ The notebook now includes a live OpenAI call so the API key from `.env` is used 
 
 ## What is inside
 
-- `headroom_erklaerung_de.ipynb` — a German notebook that shows a clear before/after demo plus a live OpenAI call with latency and token metrics
+- `headroom_erklaerung_de.ipynb` — German notebook: before/after demo with live OpenAI call, latency and token metrics
+- `headroom_explanation_en.ipynb` — English version of the same notebook
 - `.env.example` — safe template for local secrets
 - `pyproject.toml` — uv project setup for the demo
 
@@ -36,21 +40,34 @@ The goal is to make Headroom easy to understand in a video format:
 cp .env.example .env
 ```
 
-2. Add your local OpenAI key to `.env`:
+2. Add your OpenAI key to `.env`:
 
 ```env
 OPENAI_API_KEY=your-key-here
 ```
 
-This key is used in the notebook's live OpenAI cell, which also prints latency and token usage.
-
-3. Run the demo with uv:
+3. Install dependencies:
 
 ```bash
-uv run --env-file .env python -m jupyter notebook headroom_erklaerung_de.ipynb
+uv sync
 ```
 
-If you run the notebook in Jupyter, make sure the kernel uses the same environment.
+This creates `.venv` and installs everything from `pyproject.toml`.
+
+4. Run the notebook:
+
+**VS Code** (recommended — no extra steps):
+- Install the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- Open `headroom_erklaerung_de.ipynb`
+- Select kernel: `.venv (Python 3.11+)` from the kernel picker
+
+**Terminal / browser:**
+
+```bash
+uv run jupyter notebook headroom_erklaerung_de.ipynb
+```
+
+This opens the notebook in your browser using the uv-managed environment.
 
 ## Secrets policy
 

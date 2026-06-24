@@ -8,6 +8,7 @@ dependencies = [
   "tiktoken",
   "openai",
   "python-dotenv",
+  "jupyter",
 ]
 
 [tool.uv]
